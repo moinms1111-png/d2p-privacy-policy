@@ -1,79 +1,460 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Your App Name</title>
+
+    <meta name="description"
+          content="Privacy Policy for Mahedvia-e-Daira. Learn about our no-user-data-collection practices.">
+
+    <meta name="theme-color" content="#102a43">
+
+    <title>Privacy Policy | Mahedvia-e-Daira</title>
+
     <style>
+        :root {
+            --primary: #1769aa;
+            --heading: #142d4e;
+            --text: #435466;
+            --muted: #718096;
+            --background: #f4f7fb;
+            --surface: #ffffff;
+            --border: #e5ebf2;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
+            padding: 45px 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 1.75;
+            color: var(--text);
+            background: var(--background);
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #007BFF;
-        }
+
         a {
-            color: #007BFF;
+            color: var(--primary);
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            overflow: hidden;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: 0 10px 35px rgba(20, 45, 78, 0.07);
+        }
+
+        .header {
+            padding: 45px 50px;
+            color: white;
+            background: linear-gradient(135deg, #102a43, #1769aa);
+        }
+
+        .brand {
+            margin-bottom: 20px;
+            color: #d9edff;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .header h1 {
+            margin: 0 0 12px;
+            color: white;
+            font-size: 38px;
+            line-height: 1.25;
+        }
+
+        .header p {
+            margin: 0;
+            color: #e1edf8;
+        }
+
+        .date {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 7px 13px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            color: white;
+            font-size: 13px;
+        }
+
+        .content {
+            padding: 42px 50px;
+        }
+
+        .intro {
+            margin-bottom: 28px;
+            font-size: 16px;
+        }
+
+        .notice {
+            margin: 25px 0 35px;
+            padding: 20px 22px;
+            border-left: 4px solid #1769aa;
+            border-radius: 6px;
+            background: #eef6ff;
+        }
+
+        .notice strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--heading);
+        }
+
+        .section {
+            padding: 25px 0;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 20px;
+        }
+
+        .section h2 {
+            margin: 0 0 13px;
+            color: var(--heading);
+            font-size: 21px;
+        }
+
+        .section p {
+            margin: 0 0 12px;
+        }
+
+        .section ul {
+            padding-left: 23px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        .contact-box {
+            margin-top: 15px;
+            padding: 22px;
+            border: 1px solid #d7e9fb;
+            border-radius: 9px;
+            background: #f3f8fe;
+        }
+
+        .contact-box p {
+            margin: 5px 0;
+        }
+
+        .email {
+            font-weight: bold;
+            overflow-wrap: anywhere;
+        }
+
+        .footer {
+            padding: 22px;
+            border-top: 1px solid var(--border);
+            background: #f8fafc;
+            color: var(--muted);
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            .header {
+                padding: 32px 25px;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .content {
+                padding: 28px 24px;
+            }
+
+            .section h2 {
+                font-size: 19px;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .container {
+                border: none;
+                box-shadow: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div class="container">
+
+<main class="container">
+
+    <header class="header">
+        <div class="brand">Mahedvia-e-Daira</div>
+
         <h1>Privacy Policy</h1>
-        <p>Last updated: August 15, 2025</p>
-        <p>Thank you for using <strong>DRop2Pick</strong> ("we", "our", or "us"). This Privacy Policy explains how we handle your information when you use our mobile application.</p>
 
-        <h2>Information We Collect</h2>
-        <p>We may collect the following information when you use our app:</p>
-        <ul>
-            <li>Personal information you provide (e.g., name, email)</li>
-            <li>Usage data (e.g., interactions with the app)</li>
-            <li>Device information (e.g., device model, operating system)</li>
-        </ul>
+        <p>
+            Your privacy is important to us. This Privacy Policy
+            explains how Mahedvia-e-Daira handles user information.
+        </p>
 
-        <h2>How We Use Your Information</h2>
-        <p>We use your information to:</p>
-        <ul>
-            <li>Provide and improve our services</li>
-            <li>Personalize user experience</li>
-            <li>Communicate with you regarding updates</li>
-        </ul>
+        <div class="date">
+            Last Updated:
+            <time datetime="2026-11-05">November 5, 2026</time>
+        </div>
+    </header>
 
-        <h2>Data Sharing</h2>
-        <p>We do not sell your personal information. We may share your data only in the following cases:</p>
-        <ul>
-            <li>When required by law</li>
-            <li>With service providers to operate our app</li>
-        </ul>
+    <div class="content">
 
-        <h2>Security</h2>
-        <p>We take reasonable measures to protect your data from unauthorized access or disclosure.</p>
+        <p class="intro">
+            Welcome to <strong>Mahedvia-e-Daira</strong>
+            ("we", "our", or "us"). We respect your privacy and
+            are committed to protecting it. This Privacy Policy
+            explains our approach to user data when you use
+            our mobile application.
+        </p>
 
-        <h2>Children's Privacy</h2>
-        <p>Our app is not intended for children under 13 years of age, and we do not knowingly collect personal information from them.</p>
+        <div class="notice">
+            <strong>Our No-Data-Collection Commitment</strong>
+            Mahedvia-e-Daira does not collect, transmit to us,
+            store on our servers, sell, or share personal or
+            sensitive user data through the application.
+        </div>
 
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Please review this page periodically for updates.</p>
+        <section class="section" id="collection">
+            <h2>1. Information We Collect</h2>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-        <p>Email: <a href="mailto:drop2pick@gmail.com">drop2pick@gmail.com</a></p>
+            <p>
+                We do not collect personal information or
+                sensitive user data through Mahedvia-e-Daira.
+            </p>
+
+            <p>
+                We do not request or collect information such as:
+            </p>
+
+            <ul>
+                <li>Name or personal profile information.</li>
+                <li>Email addresses or phone numbers through the app.</li>
+                <li>Device location or GPS information.</li>
+                <li>Contacts, messages, or call information.</li>
+                <li>Photos, videos, or other personal files.</li>
+                <li>Financial, payment, or authentication information.</li>
+                <li>Personal app usage or advertising profiles.</li>
+            </ul>
+
+            <p>
+                Any information entered or generated during app
+                use, if applicable, is processed locally on your
+                device and is not transmitted to us.
+            </p>
+        </section>
+
+        <section class="section" id="usage">
+            <h2>2. How We Use Your Information</h2>
+
+            <p>
+                Since we do not collect personal or sensitive
+                user data through the application, we do not
+                use such data for advertising, analytics,
+                profiling, personalization, or marketing.
+            </p>
+
+            <p>
+                The application is provided for its intended
+                functionality without requiring users to submit
+                personal information to us.
+            </p>
+        </section>
+
+        <section class="section" id="sharing">
+            <h2>3. Data Sharing and Disclosure</h2>
+
+            <p>
+                We do not sell, rent, share, or disclose
+                personal or sensitive user data collected
+                through the application to third parties.
+            </p>
+
+            <p>
+                The application does not use third-party
+                services or software development kits (SDKs)
+                to collect or transmit users' personal data.
+            </p>
+
+            <p>
+                Information voluntarily provided in an email
+                sent to our support address is handled separately
+                and is used only to respond to your inquiry.
+            </p>
+
+            <p>
+                We may disclose information contained in a
+                support communication if required by applicable
+                law or a valid legal process.
+            </p>
+        </section>
+
+        <section class="section" id="third-party">
+            <h2>4. Third-Party Services</h2>
+
+            <p>
+                Mahedvia-e-Daira does not use third-party
+                advertising, analytics, or tracking services
+                to collect or share personal user information.
+            </p>
+
+            <p>
+                We do not use third-party services to build
+                user profiles or track users' activities
+                across applications or websites.
+            </p>
+        </section>
+
+        <section class="section" id="retention">
+            <h2>5. Data Retention and Deletion</h2>
+
+            <p>
+                We do not collect or maintain personal or
+                sensitive user data through the application.
+                Therefore, we do not maintain a user-data
+                database or retain app-collected personal
+                information.
+            </p>
+
+            <p>
+                If you voluntarily contact us by email, we
+                retain your message and email address only
+                for as long as reasonably necessary to
+                respond to and resolve your inquiry, subject
+                to applicable legal requirements.
+            </p>
+
+            <p>
+                You may contact us at the email address below
+                to request deletion of your support correspondence.
+            </p>
+        </section>
+
+        <section class="section" id="security">
+            <h2>6. Data Security</h2>
+
+            <p>
+                Because we do not collect or maintain personal
+                user data through the application, we do not
+                operate a database of personal user information.
+            </p>
+
+            <p>
+                We take reasonable precautions to protect any
+                information voluntarily sent to us through
+                support communications.
+            </p>
+        </section>
+
+        <section class="section" id="children">
+            <h2>7. Children's Privacy</h2>
+
+            <p>
+                Mahedvia-e-Daira does not knowingly collect
+                personal information from children or other
+                users through the application.
+            </p>
+
+            <p>
+                If you believe that a child has provided
+                personal information to us through a support
+                communication, please contact us so that
+                we can address your concern.
+            </p>
+        </section>
+
+        <section class="section" id="changes">
+            <h2>8. Changes to This Privacy Policy</h2>
+
+            <p>
+                We may update this Privacy Policy when our
+                application, services, or applicable legal
+                requirements change.
+            </p>
+
+            <p>
+                Any updates will be published on this page
+                with a revised "Last Updated" date.
+                We encourage users to review this policy
+                periodically.
+            </p>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>9. Contact Us</h2>
+
+            <p>
+                If you have any questions, concerns, or
+                requests regarding this Privacy Policy,
+                please contact us:
+            </p>
+
+            <div class="contact-box">
+                <p><strong>Mahedvia-e-Daira Support</strong></p>
+
+                <p>
+                    Email:
+                    <a class="email"
+                       href="mailto:drop2pick@gmail.com">
+                        drop2pick@gmail.com
+                    </a>
+                </p>
+            </div>
+        </section>
+
     </div>
+
+    <footer class="footer">
+        <p>
+            &copy; <span id="year">2026</span>
+            Mahedvia-e-Daira. All rights reserved.
+        </p>
+    </footer>
+
+</main>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
+
 </body>
 </html>
